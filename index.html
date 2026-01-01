@@ -21,8 +21,8 @@
                     <button class="menu-btn" data-screen="about">START GAME</button>
                     <button class="menu-btn" data-screen="education">EDUCATION</button>
                     <button class="menu-btn" data-screen="leadership">LEADERSHIP</button>
-                    <button class="menu-btn" data-screen="research">RESEARCH</button>
-                    <button class="menu-btn" data-screen="experience">EXPERIENCE</button>
+                    <button class="menu-btn" data-screen="research">EXPERIENCE</button>
+                    <button class="menu-btn" data-screen="extras">EXTRAS</button>
                 </div>
                 <p class="press-start">Press any button to continue...</p>
             </div>
@@ -108,71 +108,41 @@
                 <button class="back-btn" onclick="showScreen('title-screen')">← BACK</button>
                 <h2>EDUCATION</h2>
             </div>
-            <div class="content-box">
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🎓</span>
-                        <h3>STANFORD UNIVERSITY</h3>
-                        <span class="quest-status">ACTIVE</span>
-                    </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Stanford, CA</p>
-                        <p><strong>Major:</strong> B.S. Management Science & Engineering</p>
-                        <p><strong>Period:</strong> Sep 2025 - Present</p>
-                        <p><strong>GPA:</strong> 4.00/4.00</p>
-                        <p><strong>SAT:</strong> 1570/1600 (M: 790; V: 780)</p>
-                        <div class="quest-objectives">
-                            <p><strong>Organizations:</strong></p>
-                            <ul>
-                                <li>TreeHacks (Organizing Team)</li>
-                                <li>Stanford Pre-Business Association</li>
-                                <li>Cardinal Policy Group</li>
-                                <li>Stanford Sustainable Investment Group</li>
-                                <li>Persian Student Association</li>
-                            </ul>
-                            <p><strong>Relevant Coursework:</strong></p>
-                            <ul>
-                                <li>Entrepreneurial Thought Leaders</li>
-                                <li>Health Care Leadership</li>
-                                <li>Finance, Corporations, and Society</li>
-                            </ul>
+            <div class="content-box education-split">
+                <div class="education-info">
+                    <div class="quest-item">
+                        <div class="quest-header">
+                            <span class="quest-icon">🎓</span>
+                            <h3>STANFORD UNIVERSITY</h3>
+                            <span class="quest-status">ACTIVE</span>
+                        </div>
+                        <div class="quest-details">
+                            <p><strong>Location:</strong> Stanford, CA</p>
+                            <p><strong>Major:</strong> B.S. Management Science & Engineering</p>
+                            <p><strong>Period:</strong> Sep 2025 - Present</p>
+                            <p><strong>GPA:</strong> 4.00/4.00</p>
+                            <p><strong>SAT:</strong> 1570/1600             (790M 780V)</p>
+                            <div class="quest-objectives">
+                                <p><strong>Organizations:</strong></p>
+                                <ul>
+                                    <li>TreeHacks (Organizing Team)</li>
+                                    <li>Stanford Pre-Business Association</li>
+                                    <li>Cardinal Policy Group</li>
+                                    <li>Stanford Sustainable Investment Group</li>
+                                    <li>Persian Student Association</li>
+                                </ul>
+                                <p><strong>Relevant Coursework:</strong></p>
+                                <ul>
+                                    <li>Entrepreneurial Thought Leaders</li>
+                                    <li>Health Care Leadership</li>
+                                    <li>Finance, Corporations, and Society</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Experience Screen -->
-        <div class="screen hidden" id="experience-screen">
-            <div class="screen-header">
-                <button class="back-btn" onclick="showScreen('title-screen')">← BACK</button>
-                <h2>EXPERIENCE</h2>
-            </div>
-            <div class="content-box">
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🔬</span>
-                        <h3>QUALIA OTO - IP RESEARCH INTERN</h3>
-                        <span class="quest-status">ACTIVE</span>
-                    </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Dallas, TX</p>
-                        <p><strong>Period:</strong> Jan 2026 - Present</p>
-                        <p><strong>Field:</strong> Auditory Biotechnology Research</p>
-                    </div>
-                </div>
-
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🏛️</span>
-                        <h3>TEXAS HOUSE OF REPRESENTATIVES - POLICY RESEARCH INTERN</h3>
-                        <span class="quest-status">COMPLETED</span>
-                    </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Dallas, TX</p>
-                        <p><strong>Period:</strong> Jun 2024 - Aug 2024</p>
-                        <p><strong>Department:</strong> Texas State House District Office</p>
-                    </div>
+                <div class="education-image">
+                    <img src="images/stanford-campus.png" alt="Stanford University Campus" />
                 </div>
             </div>
         </div>
@@ -242,9 +212,39 @@
         <div class="screen hidden" id="research-screen">
             <div class="screen-header">
                 <button class="back-btn" onclick="showScreen('title-screen')">← BACK</button>
-                <h2>RESEARCH</h2>
+                <h2>EXPERIENCE</h2>
             </div>
             <div class="content-box">
+                <h3 style="margin-top: 0; margin-bottom: 1em; font-size: 1.2em; text-align: center;">PROFESSIONAL</h3>
+                
+                <div class="quest-item">
+                    <div class="quest-header">
+                        <span class="quest-icon">🔬</span>
+                        <h3>QUALIA OTO - IP RESEARCH INTERN</h3>
+                        <span class="quest-status">ACTIVE</span>
+                    </div>
+                    <div class="quest-details">
+                        <p><strong>Location:</strong> Dallas, TX</p>
+                        <p><strong>Period:</strong> Jan 2026 - Present</p>
+                        <p><strong>Field:</strong> Auditory Biotechnology Research</p>
+                    </div>
+                </div>
+
+                <div class="quest-item">
+                    <div class="quest-header">
+                        <span class="quest-icon">🏛️</span>
+                        <h3>TEXAS HOUSE OF REPRESENTATIVES - POLICY RESEARCH INTERN</h3>
+                        <span class="quest-status">COMPLETED</span>
+                    </div>
+                    <div class="quest-details">
+                        <p><strong>Location:</strong> Dallas, TX</p>
+                        <p><strong>Period:</strong> Jun 2024 - Aug 2024</p>
+                        <p><strong>Department:</strong> Texas State House District Office</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2em; margin-bottom: 1em; font-size: 1.2em; text-align: center;">RESEARCH</h3>
+
                 <div class="quest-item">
                     <div class="quest-header">
                         <span class="quest-icon">🧠</span>
@@ -282,6 +282,113 @@
                         <div class="skill-item">Policy Research</div>
                         <div class="skill-item">Data Modeling</div>
                         <div class="skill-item">Investment Analysis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extras Screen -->
+        <div class="screen hidden" id="extras-screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="showScreen('title-screen')">← BACK</button>
+                <h2>EXTRAS</h2>
+            </div>
+            <div class="content-box">
+                <div class="quest-item accordion-item">
+                    <div class="quest-header accordion-header">
+                        <span class="quest-icon">🎵</span>
+                        <h3>CURRENTLY LISTENING</h3>
+                        <span class="quest-status">ACTIVE</span>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="quest-details accordion-content">
+                        <div class="album-grid">
+                            <div class="album-cover">
+                                <img src="images/album-1.png" alt="Album 1" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-2.png" alt="Album 2" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-3.png" alt="Album 3" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-4.png" alt="Album 4" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-5.png" alt="Album 5" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-6.png" alt="Album 6" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-7.png" alt="Album 7" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-8.png" alt="Album 8" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-9.png" alt="Album 9" />
+                            </div>
+                            <div class="album-cover">
+                                <img src="images/album-10.png" alt="Album 10" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quest-item accordion-item collapsed">
+                    <div class="quest-header accordion-header">
+                        <span class="quest-icon">🎮</span>
+                        <h3>PLAY HISTORY</h3>
+                        <span class="quest-status">ACTIVE</span>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="quest-details accordion-content">
+                        <div class="album-grid">
+                            <div class="game-cover">
+                                <img src="images/game-1.png" alt="Game 1" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-2.png" alt="Game 2" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-3.png" alt="Game 3" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-4.png" alt="Game 4" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-5.png" alt="Game 5" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-6.png" alt="Game 6" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-7.png" alt="Game 7" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-8.png" alt="Game 8" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-9.png" alt="Game 9" />
+                            </div>
+                            <div class="game-cover">
+                                <img src="images/game-10.png" alt="Game 10" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quest-item accordion-item collapsed">
+                    <div class="quest-header accordion-header">
+                        <span class="quest-icon">📸</span>
+                        <h3>CAMERA ROLL (UNCURATED)</h3>
+                        <span class="quest-status">ACTIVE</span>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="quest-details accordion-content">
+                        <p>Coming soon...</p>
                     </div>
                 </div>
             </div>

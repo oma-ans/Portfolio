@@ -200,6 +200,45 @@ body {
     line-height: 1.8;
 }
 
+/* Education Split Screen */
+.education-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.education-image {
+    background: rgba(15, 52, 96, 0.6);
+    border: 2px solid #533483;
+    padding: 0;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 20px;
+    align-self: center;
+    margin-top: -20px;
+}
+
+.education-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    display: block;
+}
+
+.education-info {
+    min-width: 0;
+}
+
 .character-sheet {
     background: rgba(15, 52, 96, 0.6);
     border: 2px solid #533483;
@@ -546,6 +585,48 @@ body {
     color: #ffd700;
 }
 
+/* Accordion Styles */
+.accordion-header {
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 0 !important;
+}
+
+.accordion-header:hover {
+    color: #ffd700;
+}
+
+.accordion-header:hover h3 {
+    color: #ffd700;
+}
+
+.accordion-icon {
+    font-size: 0.8rem;
+    color: #00d9ff;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
+
+.accordion-item.collapsed .accordion-icon {
+    transform: rotate(-90deg);
+}
+
+.accordion-content {
+    max-height: 2000px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out, margin-top 0.3s ease-out;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.accordion-item.collapsed .accordion-content {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .quest-objectives {
     margin-top: 15px;
     padding-top: 15px;
@@ -659,6 +740,15 @@ body {
     .equipment-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .education-split {
+        grid-template-columns: 1fr;
+    }
+
+    .education-image {
+        position: static;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -712,5 +802,103 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #00d9ff;
+}
+
+/* Album Grid */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.album-cover {
+    width: 100%;
+    padding-bottom: 100%; /* Creates perfect square using padding trick */
+    position: relative;
+    background: rgba(15, 52, 96, 0.6);
+    border: 3px solid #533483;
+    box-shadow: 
+        inset 0 0 10px rgba(0, 0, 0, 0.3),
+        0 0 10px rgba(83, 52, 131, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.album-cover:hover {
+    border-color: #00d9ff;
+    box-shadow: 
+        inset 0 0 15px rgba(0, 217, 255, 0.2),
+        0 0 20px rgba(0, 217, 255, 0.5);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.album-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 6px;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    border: 2px solid #0f3460;
+}
+
+/* Game Cover - Taller aspect ratio (2:3) */
+.game-cover {
+    width: 100%;
+    padding-bottom: 150%; /* Creates 2:3 aspect ratio (1000x1500) */
+    position: relative;
+    background: rgba(15, 52, 96, 0.6);
+    border: 3px solid #533483;
+    box-shadow: 
+        inset 0 0 10px rgba(0, 0, 0, 0.3),
+        0 0 10px rgba(83, 52, 131, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.game-cover:hover {
+    border-color: #00d9ff;
+    box-shadow: 
+        inset 0 0 15px rgba(0, 217, 255, 0.2),
+        0 0 20px rgba(0, 217, 255, 0.5);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.game-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 6px;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    border: 2px solid #0f3460;
+}
+
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
 }
 

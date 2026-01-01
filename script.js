@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const screenMap = {
                 'about': 'about-screen',
                 'education': 'education-screen',
-                'experience': 'experience-screen',
                 'leadership': 'leadership-screen',
-                'research': 'research-screen'
+                'research': 'research-screen',
+                'extras': 'extras-screen'
             };
             
             const screenId = screenMap[targetScreen] || targetScreen + '-screen';
@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const keyMap = {
             '1': 'about-screen',
             '2': 'education-screen',
-            '3': 'experience-screen',
-            '4': 'leadership-screen',
-            '5': 'research-screen'
+            '3': 'leadership-screen',
+            '4': 'research-screen',
+            '5': 'extras-screen'
         };
         
         if (keyMap[e.key]) {
@@ -73,9 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const screenMap = {
                     'about': 'about-screen',
                     'education': 'education-screen',
-                    'experience': 'experience-screen',
                     'leadership': 'leadership-screen',
-                    'research': 'research-screen'
+                    'research': 'research-screen',
+                    'extras': 'extras-screen'
                 };
                 if (screenMap[btnScreen] === keyMap[e.key]) {
                     btn.classList.add('active');
@@ -113,6 +113,15 @@ document.addEventListener('DOMContentLoaded', function() {
             bar.style.transition = 'width 1s ease-out';
             bar.style.width = width;
         }, 100);
+    });
+    
+    // Accordion functionality
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const accordionItem = this.closest('.accordion-item');
+            accordionItem.classList.toggle('collapsed');
+        });
     });
     
 });
