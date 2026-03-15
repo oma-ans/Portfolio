@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/now-playing.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
+}

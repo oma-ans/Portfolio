@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
 }
 
 body {
@@ -193,6 +195,174 @@ body {
     background: #533483;
     color: #ffd700;
     transform: translateX(-3px);
+}
+
+/* Runner game (Chrome Dino-style) */
+.runner-game-section {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border: 4px solid #0f3460;
+    box-shadow: 0 0 0 2px #533483, 0 0 15px rgba(83, 52, 131, 0.4);
+    overflow: hidden;
+}
+
+.runner-viewport {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: 300px;
+    max-height: 45vh;
+    box-sizing: border-box;
+}
+
+.runner-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 48px);
+    background: url('assets/backdrop.jpg') center bottom / cover no-repeat;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.runner-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.runner-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none;
+}
+
+.runner-ui .runner-controls {
+    pointer-events: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.runner-score {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.65rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 0 #0f3460;
+}
+
+.runner-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    padding: 10px 16px;
+    background: #0f3460;
+    color: #00d9ff;
+    border: 3px solid #533483;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 #533483;
+}
+
+.runner-btn:hover {
+    background: #533483;
+    color: #ffd700;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 0 #0f3460;
+}
+
+.runner-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #0f3460;
+}
+
+.runner-start-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 52, 96, 0.88);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+.runner-start-overlay.hidden {
+    display: none;
+}
+
+.runner-start-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.85rem;
+    color: #00d9ff;
+    text-shadow: 2px 2px 0 #0f3460;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.runner-start-controls {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    color: #ffd700;
+    text-align: center;
+}
+
+.runner-start-hint {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5rem;
+    color: #aaa;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.runner-game-over {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 52, 96, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.runner-game-over.hidden {
+    display: none;
+}
+
+.runner-game-over-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #ff4444;
+    text-shadow: 2px 2px 0 #0f3460;
+}
+
+.runner-game-over-score {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    color: #ffd700;
+}
+
+.runner-btn-restart {
+    font-size: 0.65rem;
 }
 
 /* Content Boxes */
@@ -652,6 +822,51 @@ body {
     color: #00d9ff;
 }
 
+/* Experience Tab Toggle */
+.tab-bar {
+    display: flex;
+    gap: 0;
+    margin-bottom: 25px;
+    border: 3px solid #533483;
+}
+
+.tab-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    padding: 12px 0;
+    flex: 1;
+    background: #0f3460;
+    color: #888;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tab-btn:first-child {
+    border-right: 3px solid #533483;
+}
+
+.tab-btn:hover {
+    color: #00d9ff;
+    background: rgba(83, 52, 131, 0.4);
+}
+
+.tab-btn.active {
+    background: #533483;
+    color: #ffd700;
+    box-shadow: inset 0 0 15px rgba(255, 215, 0, 0.15);
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
 /* Skills Inventory */
 .skills-inventory {
     margin-top: 30px;
@@ -899,6 +1114,261 @@ body {
     .album-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+}
+
+/* ========== Photo Grid (Camera Roll) ========== */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+    padding: 16px 14px 8px 14px;
+}
+
+.photo-cover {
+    border: 3px solid #533483;
+    cursor: pointer;
+    overflow: visible;
+    transition: border-color 0.2s ease, transform 0.3s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.photo-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-cover:nth-child(1)  { transform: rotate(-2.5deg); }
+.photo-cover:nth-child(2)  { transform: rotate(1.8deg);  }
+.photo-cover:nth-child(3)  { transform: rotate(-1.2deg); }
+.photo-cover:nth-child(4)  { transform: rotate(3deg);    }
+.photo-cover:nth-child(5)  { transform: rotate(-1.5deg); }
+.photo-cover:nth-child(6)  { transform: rotate(1.2deg);  }
+.photo-cover:nth-child(7)  { transform: rotate(-3deg);   }
+.photo-cover:nth-child(8)  { transform: rotate(2.4deg);  }
+.photo-cover:nth-child(9)  { transform: rotate(-1.8deg); }
+.photo-cover:nth-child(10) { transform: rotate(1.5deg);  }
+
+.photo-cover:hover {
+    border-color: #00d9ff;
+    transform: translateY(-6px) scale(1.05) rotate(0deg) !important;
+    box-shadow: 0 0 22px rgba(0, 217, 255, 0.5);
+    z-index: 2;
+}
+
+/* ========== Now Playing Card ========== */
+.now-playing-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(15, 52, 96, 0.6);
+    border: 2px solid #533483;
+    border-radius: 4px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.now-playing-card.playing {
+    border-color: #00d9ff;
+    box-shadow: 0 0 18px rgba(0, 217, 255, 0.35);
+}
+
+.now-playing-card.not-playing {
+    opacity: 0.55;
+    border-color: #533483;
+    box-shadow: none;
+}
+
+/* Skeleton shimmer while loading */
+.now-playing-card.loading::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(83, 52, 131, 0.25) 50%,
+        transparent 100%);
+    animation: np-shimmer 1.4s infinite;
+}
+
+@keyframes np-shimmer {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Album art */
+.np-album-art {
+    position: relative;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #533483;
+    background: #0f3460;
+    overflow: hidden;
+}
+
+.now-playing-card.playing .np-album-art {
+    border-color: #00d9ff;
+}
+
+.np-album-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    image-rendering: auto;
+}
+
+/* Animated equalizer bars overlay on album art */
+.np-equalizer {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.now-playing-card.playing .np-equalizer {
+    opacity: 1;
+}
+
+.np-equalizer span {
+    display: block;
+    width: 3px;
+    background: #1DB954;
+    border-radius: 1px;
+    transform-origin: bottom;
+}
+
+.np-equalizer span:nth-child(1) { animation: np-bar1 0.8s ease-in-out infinite alternate; }
+.np-equalizer span:nth-child(2) { animation: np-bar2 0.6s ease-in-out infinite alternate; }
+.np-equalizer span:nth-child(3) { animation: np-bar3 0.9s ease-in-out infinite alternate; }
+
+@keyframes np-bar1 { from { height: 4px; }  to { height: 14px; } }
+@keyframes np-bar2 { from { height: 8px; }  to { height: 6px;  } }
+@keyframes np-bar3 { from { height: 3px; }  to { height: 12px; } }
+
+/* Track info */
+.np-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.np-badge {
+    font-size: 9px;
+    font-family: 'Press Start 2P', monospace;
+    color: #1DB954;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.now-playing-card.playing .np-badge {
+    opacity: 1;
+}
+
+.now-playing-card.not-playing .np-badge {
+    content: '○ NOT CURRENTLY LISTENING';
+    color: #888;
+    opacity: 1;
+}
+
+.now-playing-card.not-playing .np-badge::before {
+    content: '○ NOT CURRENTLY LISTENING';
+}
+
+.now-playing-card.not-playing .np-badge {
+    font-size: 8px;
+    opacity: 1;
+    color: #888;
+}
+
+.now-playing-card.not-playing .np-badge .np-badge-text {
+    display: none;
+}
+
+.np-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: inherit;
+    line-height: 1.3;
+}
+
+.np-artist {
+    font-size: 11px;
+    color: #00d9ff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: inherit;
+}
+
+/* Progress bar */
+.np-progress-wrap {
+    margin-top: 6px;
+}
+
+.np-progress-bar {
+    width: 100%;
+    height: 3px;
+    background: rgba(83, 52, 131, 0.5);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.np-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #1DB954;
+    border-radius: 2px;
+    transition: width 1s linear;
+}
+
+.now-playing-card.not-playing .np-progress-fill {
+    background: #444;
+}
+
+/* Spotify link on click */
+.now-playing-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 480px) {
+    .now-playing-card {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .np-album-art {
+        width: 60px;
+        height: 60px;
+    }
+
+    .np-title {
+        font-size: 11px;
+    }
+
+    .np-artist {
+        font-size: 10px;
     }
 }
 

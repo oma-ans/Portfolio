@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anson Omar - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/avatar_favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,6 @@
                 <div class="menu-options">
                     <button class="menu-btn" data-screen="about">START GAME</button>
                     <button class="menu-btn" data-screen="education">EDUCATION</button>
-                    <button class="menu-btn" data-screen="leadership">LEADERSHIP</button>
                     <button class="menu-btn" data-screen="research">EXPERIENCE</button>
                     <button class="menu-btn" data-screen="extras">EXTRAS</button>
                 </div>
@@ -43,63 +43,62 @@
                         <span class="player-title">Anson Omar</span>
                     </div>
 
-                    <div class="player-info-grid">
-                        <div class="info-item">
-                            <span class="info-label" style="font-size: 1.15em;">Major</span>
-                            <span class="info-value" style="font-size: 0.9em;">Management Science & Engineering</span>
+                    <div style="display: flex; align-items: center; gap: 0.75em;">
+                        <div class="info-item" style="width: 50%;">
+                            <span class="info-label" style="font-size: 1.15em;">Studying:</span>
+                            <span class="info-value" style="font-size: 0.9em;">MS&E & Economics</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label" style="font-size: 1.15em;">Industries</span>
-                            <span class="info-value" style="font-size: 0.9em;">
-                                <ul style="list-style-type: disc; margin: 0; padding-left: 1.2em;">
-                                    <li>Biotech</li>
-                                    <li>Venture Capital</li>
-                                    <li>Policy Research</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="interests-section">
-                        <h3>Interests</h3>
-                        <ul class="interests-list" style="font-size: 0.7em;">
-                            <li>Pickleball</li>
-                            <li>Dallas sports teams</li>
-                            <li>Wordle</li>
-                            <li>Martin Scorsese films</li>
-                            <li>Pop rock music</li>
-                            <li>Brainstem implants</li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-section">
-                        <h3>Contact</h3>
-                        <div class="contact-icons">
-                            <a href="https://www.linkedin.com/in/ansonomar" target="_blank" rel="noopener noreferrer" class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .771 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                            </a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
+                        <div class="info-item" style="width: 50%;">
+                            <span class="info-label" style="font-size: 1.15em;">Socials:</span>
+                            <div class="contact-icons" style="display: flex; gap: 0.6em; align-items: center; color: #ffd700;">
+                                <a href="https://www.linkedin.com/in/ansonomar" target="_blank" rel="noopener noreferrer" class="contact-icon" style="color: #ffd700; width: 32px; height: 32px;">
+                                    <svg width="20" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .771 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/ansonomar" target="_blank" rel="noopener noreferrer" class="contact-icon" style="color: #ffd700; width: 32px; height: 32px;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="player-log">
                     <h3>Player Log</h3>
-                    <p style="font-size: 0.85em;">Hi! I'm Anson, a <span class="org-name org-stanford">Stanford</span> student interested in the intersection of policy, capital, and emerging technology.</p>
-                    <ul>
-                        <li><span class="org-name org-treehacks">TreeHacks</span>: Leading sponsorships with top tech companies, venture funds, and startups.</li>
-                        <li><span class="org-name org-cpg">Cardinal Policy Group</span>: Conducting AI and automated decision-making policy research for legislators and institutions.</li>
-                        <li><span class="org-name org-gsb">Stanford GSB Behavioral Lab</span>: Running in-person human subject experiments and analyzing consumer and political psychology data.</li>
-                        <li>Additional research: Electoral optimization, resource allocation modeling, and biotech IP.</li>
-                    </ul>
+                    <p style="font-size: 0.75em; line-height: 1.6;">Hi! I'm Anson<br><br>At Stanford, I'm on the management team of <span class="org-name org-cpg" style="text-decoration: underline;">Cardinal Ventures</span> and helped organize <a href="https://treehacks.com" target="_blank" rel="noopener noreferrer"><span class="org-name org-treehacks" style="text-decoration: underline;">TreeHacks 2026</span></a><br><br>I'm interested in consumer and media tech, investing, and policy<br><br>feel free to <a href="mailto:ansono@stanford.edu" style="color: inherit; text-decoration: underline;">reach out</a>; let's grab coffee!</p>
                 </div>
             </div>
+            <!-- Runner game (Chrome Dino-style) below about content -->
+            <h3 style="text-align: center; margin-top: 1.5em; margin-bottom: 0.5em; color: #ffd700;">Get Started</h3>
+            <section class="runner-game-section">
+                <div class="runner-viewport" id="runner-viewport">
+                    <div class="runner-backdrop" id="runner-backdrop"></div>
+                    <canvas id="runner-canvas" class="runner-canvas"></canvas>
+                    <div class="runner-ui">
+                        <span class="runner-score" id="runner-score">SCORE: 00000</span>
+                        <div class="runner-controls">
+                            <button type="button" class="runner-btn runner-btn-duck" id="runner-duck-btn" aria-label="Duck">S</button>
+                            <button type="button" class="runner-btn runner-btn-jump" id="runner-jump-btn" aria-label="Jump">W</button>
+                        </div>
+                    </div>
+                    <div class="runner-start-overlay" id="runner-start-overlay">
+                        <p class="runner-start-title">PRESS W TO START</p>
+                        <p class="runner-start-controls">W = Jump &nbsp;&nbsp; S = Duck</p>
+                        <p class="runner-start-hint">Jump over trees, duck under paper airplanes.</p>
+                    </div>
+                    <div class="runner-game-over hidden" id="runner-game-over">
+                        <p class="runner-game-over-title">GAME OVER</p>
+                        <p class="runner-game-over-score" id="runner-final-score">SCORE: 00000</p>
+                        <p class="runner-game-over-score" id="runner-high-score">HIGH SCORE: 00000</p>
+                        <button type="button" class="runner-btn runner-btn-restart" id="runner-restart-btn">
+                            PRESS W TO RESTART
+                        </button>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- Education Screen -->
@@ -121,20 +120,18 @@
                             <p><strong>Major:</strong> B.S. Management Science & Engineering</p>
                             <p><strong>Period:</strong> Sep 2025 - Present</p>
                             <p><strong>GPA:</strong> 4.00/4.00</p>
-                            <p><strong>SAT:</strong> 1570/1600             (790M 780V)</p>
                             <div class="quest-objectives">
                                 <p><strong>Organizations:</strong></p>
                                 <ul>
                                     <li>TreeHacks (Organizing Team)</li>
                                     <li>Stanford Pre-Business Association</li>
                                     <li>Cardinal Policy Group</li>
-                                    <li>Stanford Sustainable Investment Group</li>
-                                    <li>Persian Student Association</li>
+                                    <li>Affiliated Stanford Entrepreneurial Students</li>
                                 </ul>
                                 <p><strong>Relevant Coursework:</strong></p>
                                 <ul>
-                                    <li>Entrepreneurial Thought Leaders</li>
-                                    <li>Health Care Leadership</li>
+                                    <li>Networks</li>
+                                    <li>Programming Methodology</li>
                                     <li>Finance, Corporations, and Society</li>
                                 </ul>
                             </div>
@@ -215,73 +212,76 @@
                 <h2>EXPERIENCE</h2>
             </div>
             <div class="content-box">
-                <h3 style="margin-top: 0; margin-bottom: 1em; font-size: 1.2em; text-align: center;">PROFESSIONAL</h3>
-                
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🔬</span>
-                        <h3>QUALIA OTO - IP RESEARCH INTERN</h3>
-                        <span class="quest-status">ACTIVE</span>
+                <div class="tab-bar">
+                    <button class="tab-btn active" data-tab="work">WORK</button>
+                    <button class="tab-btn" data-tab="leadership">LEADERSHIP</button>
+                </div>
+
+                <div class="tab-panel active" id="tab-work">
+                    <div class="quest-item">
+                        <div class="quest-header">
+                            <span class="quest-icon">🤖</span>
+                            <h3>CENTER FOR AI AND DIGITAL POLICY - POLICY CONSULTANT</h3>
+                            <span class="quest-status">ACTIVE</span>
+                        </div>
+                        <div class="quest-details">
+                            <p><strong>Location:</strong> Remote</p>
+                            <p><strong>Period:</strong> Jan 2026 - Present</p>
+                            <p><strong>Field:</strong> AI Governance & Technology Policy</p>
+                        </div>
                     </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Dallas, TX</p>
-                        <p><strong>Period:</strong> Jan 2026 - Present</p>
-                        <p><strong>Field:</strong> Auditory Biotechnology Research</p>
+
+                    <div class="quest-item">
+                        <div class="quest-header">
+                            <span class="quest-icon">🧠</span>
+                            <h3>STANFORD GSB BEHAVIORAL LAB - RESEARCH ASSISTANT</h3>
+                            <span class="quest-status">ACTIVE</span>
+                        </div>
+                        <div class="quest-details">
+                            <p><strong>Location:</strong> Stanford, CA</p>
+                            <p><strong>Period:</strong> Jan 2026 - Present</p>
+                            <p><strong>Field:</strong> Consumer Psychology & Organizational Behavior</p>
+                        </div>
+                    </div>
+
+                    <div class="quest-item">
+                        <div class="quest-header">
+                            <span class="quest-icon">🏥</span>
+                            <h3>BOSTON SCIENTIFIC - STRATEGY CONSULTANT</h3>
+                            <span class="quest-status">COMPLETED</span>
+                        </div>
+                        <div class="quest-details">
+                            <p><strong>Location:</strong> Remote</p>
+                            <p><strong>Period:</strong> Jan 2026 - Mar 2026</p>
+                            <p><strong>Field:</strong> Healthcare Strategy & Market Analysis</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🏛️</span>
-                        <h3>TEXAS HOUSE OF REPRESENTATIVES - POLICY RESEARCH INTERN</h3>
-                        <span class="quest-status">COMPLETED</span>
+                <div class="tab-panel" id="tab-leadership">
+                    <div class="quest-item">
+                        <div class="quest-header">
+                            <span class="quest-icon">💼</span>
+                            <h3>CARDINAL VENTURES - PARTNERSHIPS ASSOCIATE</h3>
+                            <span class="quest-status">ACTIVE</span>
+                        </div>
+                        <div class="quest-details">
+                            <p><strong>Location:</strong> Stanford, CA</p>
+                            <p><strong>Period:</strong> Feb 2026 - Present</p>
+                        </div>
                     </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Dallas, TX</p>
-                        <p><strong>Period:</strong> Jun 2024 - Aug 2024</p>
-                        <p><strong>Department:</strong> Texas State House District Office</p>
-                    </div>
-                </div>
 
-                <h3 style="margin-top: 2em; margin-bottom: 1em; font-size: 1.2em; text-align: center;">RESEARCH</h3>
-
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🧠</span>
-                        <h3>STANFORD GSB BEHAVIORAL LAB - RESEARCH ASSISTANT</h3>
-                        <span class="quest-status">ACTIVE</span>
-                    </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Stanford, CA</p>
-                        <p><strong>Period:</strong> Jan 2026 - Present</p>
-                        <p><strong>Field:</strong> Consumer Psychology & Organizational Behavior</p>
-                    </div>
-                </div>
-
-                <div class="quest-item">
-                    <div class="quest-header">
-                        <span class="quest-icon">🔬</span>
-                        <h3>SMU SCHOOL OF ENGINEERING - RESEARCH INTERN</h3>
-                        <span class="quest-status">COMPLETED</span>
-                    </div>
-                    <div class="quest-details">
-                        <p><strong>Location:</strong> Dallas, TX</p>
-                        <p><strong>Period:</strong> May 2025 - Sep 2025</p>
-                        <p><strong>Field:</strong> Political Operations Research & Management</p>
-                    </div>
-                </div>
-
-                <div class="skills-inventory">
-                    <h3>SKILLS INVENTORY</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">AMPL</div>
-                        <div class="skill-item">CPLEX</div>
-                        <div class="skill-item">Microsoft Office</div>
-                        <div class="skill-item">LaTeX</div>
-                        <div class="skill-item">Statistical Analysis</div>
-                        <div class="skill-item">Policy Research</div>
-                        <div class="skill-item">Data Modeling</div>
-                        <div class="skill-item">Investment Analysis</div>
+                    <div class="quest-item">
+                        <div class="quest-header">
+                            <span class="quest-icon">🌲</span>
+                            <h3>TREEHACKS - ORGANIZER (SPONSORSHIPS)</h3>
+                            <span class="quest-status">ACTIVE</span>
+                        </div>
+                        <div class="quest-details">
+                            <p><strong>Location:</strong> Stanford, CA</p>
+                            <p><strong>Period:</strong> Oct 2025 - Present</p>
+                            <p>Leading sponsorship outreach and partner negotiations with top tech companies, venture funds, and startups for the nation's largest collegiate hackathon.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -297,42 +297,84 @@
                 <div class="quest-item accordion-item">
                     <div class="quest-header accordion-header">
                         <span class="quest-icon">🎵</span>
-                        <h3>CURRENTLY LISTENING</h3>
+                        <h3>CURRENT FAVORITES</h3>
                         <span class="quest-status">ACTIVE</span>
                         <span class="accordion-icon">▼</span>
                     </div>
                     <div class="quest-details accordion-content">
+                        <!-- Live Spotify Now Playing Card -->
+                        <div id="now-playing-card" class="now-playing-card loading">
+                            <div class="np-album-art">
+                                <img id="np-album-img" src="" alt="Album Art" />
+                                <div class="np-equalizer">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="np-info">
+                                <div class="np-badge">● LIVE ON SPOTIFY</div>
+                                <div class="np-title" id="np-title">Loading...</div>
+                                <div class="np-artist" id="np-artist">—</div>
+                                <div class="np-progress-wrap">
+                                    <div class="np-progress-bar">
+                                        <div class="np-progress-fill" id="np-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="album-grid">
-                            <div class="album-cover">
-                                <img src="images/album-1.png" alt="Album 1" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-2.png" alt="Album 2" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-3.png" alt="Album 3" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-4.png" alt="Album 4" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-5.png" alt="Album 5" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-6.png" alt="Album 6" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-7.png" alt="Album 7" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-8.png" alt="Album 8" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-9.png" alt="Album 9" />
-                            </div>
-                            <div class="album-cover">
-                                <img src="images/album-10.png" alt="Album 10" />
-                            </div>
+                            <a href="https://open.spotify.com/album/7ivbFszr1TbVadj89BIy1y" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-1.png" alt="Album 1" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/392p3shh2jkxUxY2VHvlH8" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-2.png" alt="Album 2" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-3.png" alt="Album 3" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/6Rl6YoCarF2GHPSQmmFjuR" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-4.png" alt="Album 4" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/2LKW0m9cC63QzEI9tJH3ql" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-5.png" alt="Album 5" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/1Mhn9VosyjtWn4dMPFlna6" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-6.png" alt="Album 6" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/1jzv3jwZbt8lYfEtMjiD1R" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-7.png" alt="Album 7" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-8.png" alt="Album 8" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/4hvsfS6cytmO16IfAptVA9" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-9.png" alt="Album 9" />
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/album/0P3oVJBFOv3TDXlYRhGL7s" target="_blank" rel="noopener noreferrer">
+                                <div class="album-cover">
+                                    <img src="images/album-10.png" alt="Album 10" />
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -383,12 +425,43 @@
                 <div class="quest-item accordion-item collapsed">
                     <div class="quest-header accordion-header">
                         <span class="quest-icon">📸</span>
-                        <h3>CAMERA ROLL (UNCURATED)</h3>
+                        <h3>CAMERA ROLL</h3>
                         <span class="quest-status">ACTIVE</span>
                         <span class="accordion-icon">▼</span>
                     </div>
                     <div class="quest-details accordion-content">
-                        <p>Coming soon...</p>
+                        <div class="photo-grid">
+                            <div class="photo-cover">
+                                <img src="images/IMG_2314.jpg" alt="Photo 1" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_1608.JPG" alt="Photo 2" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_1595.JPG" alt="Photo 3" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_0166.jpg" alt="Photo 4" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/203AC0A2-0053-4E83-BD5E-4C802E040838.jpg" alt="Photo 5" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_2315.jpg" alt="Photo 6" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_5015.jpg" alt="Photo 7" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_6208.jpg" alt="Photo 8" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_6734.JPG" alt="Photo 9" />
+                            </div>
+                            <div class="photo-cover">
+                                <img src="images/IMG_6781.JPG" alt="Photo 10" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
